@@ -94,15 +94,6 @@ electro/
    ```
    The app will open at `http://localhost:5173`
 
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-5. **Run linter**
-   ```bash
-   npm run lint
-   ```
 
 ## 🎨 Design System
 
@@ -275,9 +266,9 @@ All components use Tailwind's responsive prefixes:
 
 All product images have fallback handlers to prevent broken image icons.
 
-## 🚀 Deployment
+## 🚀 Deployed on Vercel
 
-### Vercel (Recommended)
+### Vercel
 
 1. Push code to GitHub
 2. Connect repository to Vercel
@@ -288,65 +279,7 @@ All product images have fallback handlers to prevent broken image icons.
 npm run build  # Creates optimized dist/ folder
 ```
 
-### Netlify
 
-1. Connect GitHub repository
-2. Set build command: `npm run build`
-3. Set publish directory: `dist`
-4. Deploy automatically on push
-
-### GitHub Pages
-
-1. Update `vite.config.js`:
-   ```javascript
-   export default {
-     base: '/repo-name/',
-     plugins: [react()],
-   };
-   ```
-
-2. Deploy:
-   ```bash
-   npm run build
-   git add dist
-   git commit -m "Deploy to GitHub Pages"
-   git push
-   ```
-
-## 🔄 Git Workflow
-
-### Initial Setup
-```bash
-git init
-git add .
-git commit -m "Initial commit: ELECTRO eCommerce homepage"
-git branch -M main
-git remote add origin https://github.com/yourusername/electro.git
-git push -u origin main
-```
-
-### Feature Branch Workflow
-```bash
-git checkout -b feature/new-section
-# Make changes
-git add .
-git commit -m "Add new section"
-git push origin feature/new-section
-# Open Pull Request on GitHub
-```
-
-## 📦 Production Checklist
-
-- [x] All components error-free (linting passing)
-- [x] Images have fallback handlers
-- [x] Tailwind CSS optimized (unused styles purged)
-- [x] GSAP animations smooth and performant
-- [x] Mobile responsive on 320px+
-- [x] Form validation working
-- [x] Zustand state properly isolated
-- [x] No console errors or warnings
-- [x] Accessibility basics covered (alt text, semantic HTML)
-- [x] Ready for deployment
 
 ## 🐛 Browser Support
 
@@ -355,28 +288,7 @@ git push origin feature/new-section
 - Safari (latest)
 - Mobile browsers (iOS Safari, Chrome Android)
 
-## 📄 License
 
-This project is open source and available under the MIT License.
-
-## 👤 Author
-
-Built as part of the Octanet internship program.
-
-## 🙏 Acknowledgments
-
-- **Unsplash** - Free stock photography
-- **Tailwind CSS** - Utility-first CSS framework
-- **GSAP** - Professional animation library
-- **shadcn/ui** - Component library built on Radix UI
-- **Lucide Icons** - Beautiful open source icons
-
-## 📞 Support
-
-For issues, feature requests, or questions:
-1. Check existing GitHub issues
-2. Create a new issue with detailed steps to reproduce
-3. Include screenshots or screen recordings if applicable
 
 ## 🔮 Future Enhancements
 
